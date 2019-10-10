@@ -1,22 +1,115 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Charm|Delius|Dosis|Lateef&display=swap');
+span {
+  display: block;
+}
+body {
+  background: #f5f6f8;
+  font-family: 'Dosis', sans-serif;
+  color: #58595b;
+}
+/* Navbar */
+.navbar {
+  background: #82489c;
+}
+.brand {
+  color: #fff !important;
+  font-size: 30px;
+}
+/* BreadCrumbs */
+.breadcrumb-wrapper {
+  background: #fff;
+  padding: 12px 0 0 0;
+  margin-bottom: 30px;
+}
+.breadcrumb {
+  background: #fff;
+  padding: 0;
+}
+.breadcrumb .fa {
+  margin: 0 10px;
+}
+/* Date Label */
+.date-label {
+  font-size: 24px;
+  color: #181512;
+}
+/* Entry */
+/* .entry-date-description {
+  color: #181512;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
+.entry-date-description .date {
+  font-size: 20px;
+  font-weight: bold; */
+/* } */
+.entry-listing-card {
+  margin-bottom: 10px;
+  text-align: justify;
+  border-left: 4px solid #82489c;
+}
+.entry-listing-card:hover {
+  background: #e3e8ec;
+}
+.entry-emoji {
+  border-right: 2px solid #f5f6f8;
+  text-align: center;
+}
+.emoji {
+  font-size: 60px;
+}
+.date-description {
+  color: #181512;
+}
+.entry-listing-content {
+  font-size: 18px;
+  line-height: 14px;
+}
+/* Add Button */
+.add-button {
+  background: #82489c;
+  margin: 20px 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  border: transparent;
+  box-shadow: 1px 1px 15px #181512;
+  padding: 0 27px 10px;
+  border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Add Entry */
+.editor-wrapper {
+  background: #fff;
+  padding: 1px 1px 20px 1px;
 }
-
-.App-link {
-  color: #09d3ac;
+.editor {
+  margin-top: -8px;
+  line-height: 34px;
+  font-size: 20px;
+  padding: 22px 0px 0px 10px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 3px,
+    transparent 36px,
+    #181512 37px,
+    #181512 37px
+  );
+}
+.toolbar {
+  background: #e3e8ec !important;
+}
+/* loading-spinner */
+.loading-spinner {
+  height: 150px;
+  width: 150px;
+  margin-top: 100px;
+  color: #82489c;
+}
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }

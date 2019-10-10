@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Container, Row, Col } from 'react-bootstrap';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import NavMenu from './components/NavMenu';
+import Footer from './components/Footer';
+import BreadCrumbs from './components/BreadCrumbs';
+import HomeView from './containers/HomeView';
+import AddEntryView from './containers/AddEntryView';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavMenu />
+      <BreadCrumbs />
+      <Router>
+        <Container>
+          <Row>
+            <Col sm={12}>
+              <Switch>
+                <Route exact path="/" component={HomeView} />
+                <Route path="/entry" component={AddEntryView} />
+              </Switch>
+            </Col>
+          </Row>
+        </Container>
+      </Router>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
