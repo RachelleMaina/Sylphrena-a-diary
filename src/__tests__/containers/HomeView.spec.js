@@ -18,9 +18,7 @@ describe('HomeView container', () => {
             content:
               'Wafer liquorice tart wafer cupcake sweet croissant…candy bonbon cheesecake tootsie roll lemon drops.',
             title: 'Every day discovering something new',
-            __v: 0,
-            updatedAt: '2019-06-29T13:01:37.044Z',
-            createdAt: '2019-06-29T13:01:37.044Z'
+            __v: 0
           },
           {
             _id: '5d176156cf12c3000453a731',
