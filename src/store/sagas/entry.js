@@ -3,13 +3,12 @@ import { api } from '../../utils/api/entry';
 import { listEntriesSuccess, listEntriesFailure } from '../actions/entry';
 import { LIST_ENTRIES } from '../constants/entry';
 
-function* getEntryAsync({ payload }) {
+export function* listEntryAsync({ payload }) {
   try {
     let response = yield call(api.list);
     let data;
     if (response) {
       data = response.data || [];
-      console.log(response);
     }
     yield put(listEntriesSuccess({ data }));
   } catch (error) {
@@ -21,5 +20,5 @@ function* getEntryAsync({ payload }) {
 }
 
 export function* watcherListEntries() {
-  yield takeLatest(LIST_ENTRIES, getEntryAsync);
+  yield takeLatest(LIST_ENTRIES, listEntryAsync);
 }
