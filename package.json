@@ -46,20 +46,5 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.6"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "!**/coverage/**",
-      "!src/testData/**",
-      "!src/store/index.js",
-      "!src/store/constants/**",
-      "!src/store/reducers/index.js",
-      "!src/index.js"
-    ],
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "html"
-    ]
   }
 }

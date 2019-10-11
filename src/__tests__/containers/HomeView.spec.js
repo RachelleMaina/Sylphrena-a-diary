@@ -23,7 +23,6 @@ describe('HomeView container', () => {
   });
 
   it('maps state to props', () => {
-    console.log(entries);
     let state = {
       listEntries: entries
     };
